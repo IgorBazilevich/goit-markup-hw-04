@@ -129,11 +129,29 @@ body {
   text-align: left;
   color: #2e2f42;
   padding: 24px 0;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
+}
+
+.current {
+  position: relative;
+}
+
+current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: var(--pressed--state--ocean);
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
 }
 
 .address {
@@ -158,6 +176,9 @@ body {
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--text--slate);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav:hover,
@@ -204,6 +225,9 @@ body {
   border-radius: 4px;
   height: 56px;
   margin: auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button {
