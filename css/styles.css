@@ -366,8 +366,8 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: var(--primary--brand--iris);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -501,10 +501,7 @@ button:focus {
   display: inline-block;
 }
 
-.social-media-container .social-list-link:hover,
-.social-media-container .social-list-link:focus {
-  background-color: #31d0aa;
-}
+
 
 .logo-footer {
   color: #f4f4fd;
@@ -533,4 +530,25 @@ button:focus {
   display: flex;
   gap: 16px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary--brand--iris);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.social-footer-icon {
+  fill: var(--light--cloud);
+  margin: 12px;}
+
+  .social-media-container .social-footer-link:hover,
+.social-media-container .social-footer-link:focus {
+  background-color: #31d0aa;
 }
