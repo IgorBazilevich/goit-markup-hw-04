@@ -414,8 +414,8 @@ button:focus {
 }
 
 .title-portfolio-li:hover .overlay-text {
-    transform: translateY(0%);
-} 
+  transform: translateY(0%);
+}
 
 .title-portfolio-li {
   width: calc((100% - 48px) / 3);
@@ -459,22 +459,6 @@ button:focus {
   border-top: none;
 }
 
-/* .ingredient-overlay-container {
-  position: absolute;
-  top: 0px;
-  width: 360px;
-  height: 300px;
-  overflow: auto;
-  transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: var(--primary--brand--iris);
-  padding: 40px 32px;
-}
-
-.title-portfolio-li:hover .ingredient-overlay-container {
-  transform: translateX(0%);
-} */
-
 /* ============ FOOTER STYLES ============ */
 
 .footer {
@@ -504,8 +488,6 @@ button:focus {
   margin-bottom: 16px;
   display: inline-block;
 }
-
-
 
 .logo-footer {
   color: #f4f4fd;
@@ -547,12 +529,77 @@ button:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .social-footer-icon {
   fill: var(--light--cloud);
-  margin: 12px;}
+  margin: 12px;
+}
 
-  .social-media-container .social-footer-link:hover,
+.social-media-container .social-footer-link:hover,
 .social-media-container .social-footer-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-input {
+  margin-left: 80px;
+}
+
+.footer-input-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white--background--white);
+  margin-bottom: 16px;
+}
+
+.footer-form {
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+}
+
+.input-form {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff; 
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    background-color:  transparent;
+    margin-top: 16px;
+}
+.input-form::placeholder {
+    color: #ffffff; 
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    border-radius: 4px;   
+    min-width: 165px;
+    height: 40px;
+    background-color: #4d5ae5;
+    padding: 8px 24px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.footer-btn:hover, .footer-btn:focus {
+    background-color: #404bbf;
+}
+.button-icon {
+    fill: #ffffff;
+    margin-left: 16px;
 }

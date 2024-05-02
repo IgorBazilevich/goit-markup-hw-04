@@ -15,8 +15,6 @@
 
 </head>
 
-
-
 <body>
     <header class="page-header">
         <div class="container page-header-container">
@@ -38,12 +36,14 @@
         </div>
     </header>
     <main>
+        <!--1 hero  -->
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="hero-button" type="button">Order Service</button>
             </div>
         </section>
+        <!--2 directions  -->
         <section class="directions">
             <div class="container">
                 <h2 class="title-directions visually-hidden ">Directions</h2>
@@ -94,6 +94,7 @@
                 </ul>
             </div>
         </section>
+        <!--3 team  -->
         <section class="team">
             <div class="container">
                 <h2 class="title-team">Our Team</h2>
@@ -252,6 +253,7 @@
                 </ul>
             </div>
         </section>
+        <!--4 portfolio  -->
         <section class="portfolio">
             <div class="container">
                 <h2 class="title-portfolio">Our Portfolio</h2>
@@ -342,8 +344,8 @@
                 </ul>
             </div>
         </section>
-
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-logo">
@@ -385,8 +387,22 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-input">
+                <p class="footer-input-text">Subscribe</p>
+                <form class="footer-form">
+                    <label class="footer-label" for="email">
+                        <input class="input-form" type="email" name="email" id="email" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="footer-btn">Subscribe
+                        <svg class="button-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
+    <!-- MODAL OVERLAY -->
 </body>
 
 </html>
